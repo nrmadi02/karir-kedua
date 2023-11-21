@@ -13,14 +13,14 @@ const Navbar = () => {
 
   return (
     <div className=" sticky top-0 border-b border-[#FF6700] bg-white z-[20]">
-      <div className="w-full flex justify-between items-center container mx-auto lg:px-10 py-5 ">
+      <div className="w-full flex justify-between items-center container mx-auto lg:px-10">
         <Link href={"/"}>
-          <div className="flex cursor-pointer gap-3 items-center">
+          <div className="flex cursor-pointer items-center">
             <Image
               alt="_logo"
-              width={100}
+              width={80}
               height={30}
-              src={"/icons/KK2.svg"}
+              src={"/icons/logo.png"}
               className=""
             />
             <h1 className="text-3xl font-bold text-gray-600">Karir Kedua</h1>
@@ -37,13 +37,15 @@ const Navbar = () => {
               <p className="text-sm">Institut Purna Bakti</p>
             </div>
           </Link>
-          <p
-            className={`text-lg font-semibold px-2 py-1 hover:text-[#FF6700]  transition-all cursor-pointer ${isActive(
-              "/purna-loker"
-            )}`}
-          >
-            Purna Loker
-          </p>
+          <Link href={"/purna-loker"}>
+            <p
+              className={`text-lg font-semibold px-2 py-1 hover:text-[#FF6700]  transition-all cursor-pointer ${isActive(
+                "/purna-loker"
+              )}`}
+            >
+              Purna Loker
+            </p>
+          </Link>
         </div>
       </div>
     </div>

@@ -6,9 +6,9 @@ import React from "react";
 export default function InstitutPurnaBaktiPage() {
   return (
     <div>
-      <section className="bg-[#FF9248] pt-[200px] pb-[200px]">
-        <div className="container mx-auto flex flex-row px-10 items-center justify-center">
-          <div className="w-[50%] h-full text-white">
+      <section className="bg-[#FF9248] pt-[200px] pb-[200px] bg-cover bg-blend-normal bg-[url('/images/bg-home-2.png')]">
+        <div className="container mx-auto flex min-h-[calc(100vh-800px)] flex-row px-10 items-center justify-center">
+          <div className="w-full h-full text-white">
             <div className="px-5 py-1 bg-white w-max text-[#FF9248] rounded-lg font-semibold bg-opacity-80">
               <p>Institut Purna Bakti</p>
             </div>
@@ -17,7 +17,7 @@ export default function InstitutPurnaBaktiPage() {
               Ikut Kelas Sertifikasi Untuk Menjadi Certified Talent
             </p>
           </div>
-          <div className="w-[50%] h-full flex justify-end">
+          {/* <div className="w-[50%] h-full flex justify-end">
             <div className="bg-white rounded-full pt-3 px-3 pl-5 overflow-hidden w-max">
               <Image
                 alt="_bg-home"
@@ -27,7 +27,7 @@ export default function InstitutPurnaBaktiPage() {
                 className="min-h-[300px]"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       <section className="pt-[60px] pb-[60px]">
