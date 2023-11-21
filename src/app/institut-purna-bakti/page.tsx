@@ -179,7 +179,7 @@ export default function InstitutPurnaBaktiPage() {
               <div className="flex flex-row">
                 <Image
                   alt="_bg-home"
-                  src={"/images/picture4.png"}
+                  src={"/images/Picture4.png"}
                   width={100}
                   height={100}
                   className="min-h-[100px] rounded-full"
@@ -200,7 +200,7 @@ export default function InstitutPurnaBaktiPage() {
               <div className="flex flex-row">
                 <Image
                   alt="_bg-home"
-                  src={"/images/picture3.png"}
+                  src={"/images/Picture3.png"}
                   width={100}
                   height={100}
                   className="min-h-[100px] rounded-full"
