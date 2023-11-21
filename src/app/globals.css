@@ -2,7 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @font-face {
+    font-family: 'Avenir';
+    src: local('Avenir Black Oblique'), local('Avenir-Black-Oblique'),
+        url('../assets/font/Avenir-BlackOblique.woff2') format('woff2'),
+        url('../assets/font/Avenir-BlackOblique.woff') format('woff'),
+        url('../assets/font/Avenir-BlackOblique.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  } */
 
-html{
+@font-face {
+  font-family: "Avenir Black Oblique";
+  src: url("https://db.onlinewebfonts.com/t/c962694398352b8c98334981055a26e5.eot");
+  src: url("https://db.onlinewebfonts.com/t/c962694398352b8c98334981055a26e5.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/c962694398352b8c98334981055a26e5.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/c962694398352b8c98334981055a26e5.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/c962694398352b8c98334981055a26e5.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/c962694398352b8c98334981055a26e5.svg#Avenir Black Oblique")
+      format("svg");
+}
+
+html {
+  font-family: "Avenir Black Oblique";
   scroll-behavior: smooth;
 }

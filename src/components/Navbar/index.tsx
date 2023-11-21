@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div className=" sticky top-0 border-b border-[#FF6700] bg-white z-[20]">
-      <div className="w-full flex justify-between items-center container mx-auto lg:px-10">
+      <div className="w-full flex justify-between items-center container mx-auto lg:px-10 py-3">
         <Link href={"/"}>
           <div className="flex cursor-pointer items-center">
             <Image
@@ -23,28 +23,31 @@ const Navbar = () => {
               src={"/icons/logo.png"}
               className=""
             />
-            <h1 className="text-3xl font-bold text-gray-600">Karir Kedua</h1>
+            <h1 className="text-3xl font-bold text-gray-600">
+              Karir<strong className="text-[#FF6700]">Kedua</strong>
+            </h1>
           </div>
         </Link>
-        <div className="gap-5 flex items-center">
+        <div className="gap-10 flex items-center">
           <Link href={"/institut-purna-bakti"}>
             <div
-              className={`text-lg text-center font-semibold px-2 py-1 hover:text-[#FF6700] transition-all cursor-pointer ${isActive(
+              className={`text-2xl text-center font-semibold px-2 py-1 hover:text-[#FF6700] transition-all cursor-pointer ${isActive(
                 "/institut-purna-bakti"
               )}`}
             >
-              <p>IPB</p>
-              <p className="text-sm">Institut Purna Bakti</p>
+              <p>Purna</p>
+              <p className="text-[#FF6700]">Academy</p>
             </div>
           </Link>
           <Link href={"/purna-loker"}>
-            <p
-              className={`text-lg font-semibold px-2 py-1 hover:text-[#FF6700]  transition-all cursor-pointer ${isActive(
+            <div
+              className={`text-2xl text-center font-semibold px-2 py-1 hover:text-[#FF6700] transition-all cursor-pointer ${isActive(
                 "/purna-loker"
               )}`}
             >
-              Purna Loker
-            </p>
+              <p>Purna</p>
+              <p className="text-[#FF6700]">Loker</p>
+            </div>
           </Link>
         </div>
       </div>

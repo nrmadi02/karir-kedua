@@ -6,28 +6,30 @@ import React from "react";
 export default function InstitutPurnaBaktiPage() {
   return (
     <div>
-      <section className="bg-[#FF9248] pt-[200px] pb-[200px] bg-cover bg-blend-normal bg-[url('/images/bg-home-2.png')]">
-        <div className="container mx-auto flex min-h-[calc(100vh-800px)] flex-row px-10 items-center justify-center">
-          <div className="w-full h-full text-white">
-            <div className="px-5 py-1 bg-white w-max text-[#FF9248] rounded-lg font-semibold bg-opacity-80">
+      <section className="bg-[#FF9248] ">
+        <div className="container mx-auto flex min-h-[calc(100vh-800px)] flex-row px-10 gap-5 items-center justify-between">
+          <div className="w-[50%] h-full">
+            <Image
+              alt="_bg-home"
+              src={"/images/bg-2.png?dasd"}
+              width={800}
+              height={800}
+              className="min-h-[400px]"
+            />
+          </div>
+          <div className="w-[50%] h-full text-white">
+            {/* <div className="px-5 py-1 bg-white w-max text-[#FF9248] rounded-lg font-semibold bg-opacity-80">
               <p>Institut Purna Bakti</p>
-            </div>
-            <h1 className="text-5xl font-bold mt-5">Karir Kedua</h1>
+            </div> */}
+            <h1 className="text-5xl font-bold mt-5">
+              Tetap Relevan dan Kembangkan Diri
+            </h1>
             <p className="max-w-xl font-medium mt-3 text-lg">
-              Ikut Kelas Sertifikasi Untuk Menjadi Certified Talent
+              Dapatkan Akses Lebih Banyak Lowongan Pekerjaan “Certified Only”
+              dan Siapkan dirimu untuk kembali kedunia kerja dan menjadi Digital
+              Ready Talent
             </p>
           </div>
-          {/* <div className="w-[50%] h-full flex justify-end">
-            <div className="bg-white rounded-full pt-3 px-3 pl-5 overflow-hidden w-max">
-              <Image
-                alt="_bg-home"
-                src={"/images/bg-home.png"}
-                width={400}
-                height={400}
-                className="min-h-[300px]"
-              />
-            </div>
-          </div> */}
         </div>
       </section>
       <section className="pt-[60px] pb-[60px]">
@@ -35,59 +37,104 @@ export default function InstitutPurnaBaktiPage() {
           <h1 className="text-4xl font-bold text-center">
             Keunggulan Karir Kedua
           </h1>
-          <div className="grid grid-cols-3 flex-col gap-5 mt-20 justify-between w-full">
+          <div className="grid grid-cols-4 flex-col gap-5 mt-20 justify-between w-full">
             <div className="flex flex-col">
               <div className="h-[80px] w-[80px] bg-white shadow p-2 rounded-lg">
-                Icon
+                <Image
+                  alt="_bg-home"
+                  src={"/icons/icon-1.png"}
+                  width={80}
+                  height={80}
+                  // className="min-h-[100px]"
+                />
               </div>
               <p className="mt-2 text-gray-500 font-medium">
-                Menutup Intergenerational Gap.
+                Kembali Aktif Dengan Bersosialisasi Dengan Senior Students
+                Lainnya Lewat Kelas Tatapmuka.
               </p>
             </div>
             <div className="flex flex-col">
               <div className="h-[80px] w-[80px] bg-white shadow p-2 rounded-lg">
-                Icon
+                <Image
+                  alt="_bg-home"
+                  src={"/icons/icon-2.png"}
+                  width={80}
+                  height={80}
+                  // className="min-h-[100px]"
+                />
               </div>
               <p className="mt-2 text-gray-500 font-medium">
-                Kuasai Teknologi yang Dibutuhkan dalam Dunia Kerja Digital.
+                Dapatkan Pengetahuan Relevan Untuk Persiapan Karirkedua Anda –
+                Jadi Digital Ready Talent.
               </p>
             </div>
             <div className="flex flex-col">
               <div className="h-[80px] w-[80px] bg-white shadow p-2 rounded-lg">
-                Icon
+                <Image
+                  alt="_bg-home"
+                  src={"/icons/icon-3.png"}
+                  width={80}
+                  height={80}
+                  // className="min-h-[100px]"
+                />
               </div>
               <p className="mt-2 text-gray-500 font-medium">
-                Kuasai Komunikasi yang Efektif Dengan Millenial dan Gen Z.
+                Pelajari Metode Komunikasi Efektif Untuk Millenial Dan Gen-Z,
+                Tutup Intergenerational Gap.
+              </p>
+            </div>
+            <div className="flex flex-col">
+              <div className="h-[80px] w-[80px] bg-white shadow p-2 rounded-lg">
+                <Image
+                  alt="_bg-home"
+                  src={"/icons/icon-4.png"}
+                  width={80}
+                  height={80}
+                  // className="min-h-[100px]"
+                />
+              </div>
+              <p className="mt-2 text-gray-500 font-medium">
+                Lebih Akrab Dengan Teknologi Digital Untuk Memungkinkan Kerja
+                Jarak Jauh Dan Kerja Dari Rumah.
               </p>
             </div>
           </div>
-          <div className="flex flex-row justify-between items-center w-full mt-20">
-            <div className="w-[50%]">
-              <h1 className="text-5xl font-semibold">
-                Profesi yang Bisa Ditempati
+          <div className="flex flex-col items-center w-full mt-20">
+            <div>
+              <h1 className="text-5xl font-semibold text-center max-w-3xl">
+                Apa yang didapatkan setelah tersertifikasi Purna Academy by
+                Karir<strong className="text-[#FF9248]">Kedua</strong>
               </h1>
             </div>
-            <div className="w-max relative">
+            <div className="mt-10 relative">
               <div>
                 <div className="flex flex-row gap-20 justify-end items-center">
                   <div className="py-10">
-                    <p className="text-2xl text-center font-semibold">
-                      Digital Marketing
+                    <p className="text-2xl max-w-[200px] text-center font-semibold">
+                      Akses ke “Certified Only” Lowongan Kerja
                     </p>
                   </div>
                   <div className="py-10">
-                    <p className="text-2xl font-semibold">Digital Marketing</p>
+                    <p className="text-2xl font-semibold max-w-[200px] ">
+                      Tersertifikasi sebagai “Digital Ready Talent”
+                    </p>
                   </div>
                 </div>
               </div>
-              <div className="h-[150px] w-[2px] absolute top-10 right-0 left-0 mx-auto bg-gray-400"></div>
+              <div className="h-[350px] w-[2px] absolute top-5 right-0 left-0 mx-auto bg-[#FF9248]"></div>
               <div className="border-t-[2px] border-gray-400">
                 <div className="flex flex-row justify-end gap-20 items-center">
                   <div className="py-10">
-                    <p className="text-2xl font-semibold">Digital Marketing</p>
+                    <p className="text-2xl font-semibold max-w-[200px]">
+                      Lebih Relevan di dunia Digital dan Rekan Kerja yang lebih
+                      muda
+                    </p>
                   </div>
                   <div className="py-10">
-                    <p className="text-2xl font-semibold">Digital Marketing</p>
+                    <p className="text-2xl font-semibold max-w-[200px]">
+                      Kerja Jarak Jauh, Kerja dari Rumah, Pendapatan Lebih
+                      Tinggi*
+                    </p>
                   </div>
                 </div>
               </div>
@@ -100,7 +147,7 @@ export default function InstitutPurnaBaktiPage() {
           <h1 className="text-4xl font-bold text- max-w-xl text-center leading-[50px]">
             Perusahaan yang telah bekerja sama dengan Karir Kedua
           </h1>
-          <div className="flex justify-center items-center mt-20">
+          <div className="flex  flex-col justify-center items-center mt-20">
             <Image
               alt="_bg-home"
               src={"/images/pt.png"}
@@ -108,9 +155,16 @@ export default function InstitutPurnaBaktiPage() {
               height={400}
               className="min-h-[100px]"
             />
+            <Image
+              alt="_bg-home"
+              src={"/images/pt-2.png"}
+              width={200}
+              height={100}
+              className="min-h-[100px]"
+            />
           </div>
           <p className="mt-5 text-xl font-medium">
-            dan <strong className="text-[#FF9248]">700+</strong> Hiring Partner
+            dan <strong className="text-[#FF9248]">750+</strong> Hiring Partners
             Lainnya
           </p>
         </div>
@@ -125,46 +179,43 @@ export default function InstitutPurnaBaktiPage() {
               <div className="flex flex-row">
                 <Image
                   alt="_bg-home"
-                  src={"/images/bg-home.png"}
+                  src={"/images/picture4.png"}
                   width={100}
                   height={100}
                   className="min-h-[100px] rounded-full"
                 />
                 <div>
-                  <p className="ml-5 text-xl font-semibold">Nama</p>
+                  <p className="ml-5 text-xl font-semibold">Eka Hartanto</p>
                   <p className="ml-5 text-gray-500 font-medium">
-                    Posisi di Perusahaan
+                    Pencinta Burung
                   </p>
                 </div>
               </div>
               <p className="mt-2 text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                voluptatibus, quae quos, repellat, natus voluptatum voluptas
-                voluptatem facere quia quibusdam ipsa? Quisquam, quidem
-                voluptate. Quisquam, quidem voluptate.
+                "Wow, job portal ini bikin pensiun jadi anti-mainstream! Dari
+                ngopi doang, sekarang saya jadi barista senior!"
               </p>
             </div>
             <div className="w-[500px] rounded-3xl bg-white h-[300px] p-8">
               <div className="flex flex-row">
                 <Image
                   alt="_bg-home"
-                  src={"/images/bg-home.png"}
+                  src={"/images/picture3.png"}
                   width={100}
                   height={100}
                   className="min-h-[100px] rounded-full"
                 />
                 <div>
-                  <p className="ml-5 text-xl font-semibold">Nama</p>
+                  <p className="ml-5 text-xl font-semibold">Dwi Hartanto</p>
                   <p className="ml-5 text-gray-500 font-medium">
-                    Posisi di Perusahaan
+                    Mantan Jurnalis
                   </p>
                 </div>
               </div>
               <p className="mt-2 text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                voluptatibus, quae quos, repellat, natus voluptatum voluptas
-                voluptatem facere quia quibusdam ipsa? Quisquam, quidem
-                voluptate. Quisquam, quidem voluptate.
+                "Baru tahu ternyata pensiunan bisa jadi influencer di dunia
+                kerja. Job portal ini bener-bener bikin saya merasa kayak
+                seleb!"
               </p>
             </div>
           </div>

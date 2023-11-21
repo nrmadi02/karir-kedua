@@ -27,62 +27,106 @@ const ItemsJobs: Array<Jobs> = [
     categories: ["Full Time", "Part Time"],
     status: ["Verify", "Certified"],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates voluptatum. Quisquam, quidem voluptate.",
+      " Tanggung jawab utama meliputi pengembangan strategi pemasaran yang inovatif, analisis tren pasar, dan perilaku konsumen. Berperan penting dalam mengelola kampanye pemasaran dan kerjasama lintas departemen untuk mencapai target penjualan. Memantau efektivitas kampanye dan mengadaptasi pendekatan berdasarkan umpan balik pasar.",
   },
   {
     id: 2,
-    title: "Data Analyst",
+    title: "Sales Staff",
     company: "PT. Surya Abadi",
     location: "Jakarta",
     date: "10 hari yang lalu",
     categories: ["Full Time", "Part Time"],
     status: ["Verify", "Certified"],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates voluptatum. Quisquam, quidem voluptate.",
+      "Fokus pada pencapaian target penjualan melalui pemeliharaan hubungan pelanggan yang baik dan identifikasi pelanggan baru. Presentasi dan promosi produk atau layanan, serta memberikan umpan balik kepada tim produk untuk peningkatan. Keterampilan negosiasi dan komunikasi yang baik adalah kunci.",
   },
   {
     id: 3,
-    title: "Administasi",
+    title: "Data Admin",
     company: "PT. ABC",
     location: "Jakarta",
     date: "2 hari yang lalu",
     categories: ["Full Time", "Part Time"],
     status: ["Verify"],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates voluptatum. Quisquam, quidem voluptate.",
+      "Bertanggung jawab mengelola dan memastikan integritas data perusahaan. Melibatkan penginputan data, pembaruan, dan analisis data untuk mendukung pengambilan keputusan. Koordinasi antar departemen untuk kebutuhan data, serta memastikan keamanan dan privasi data yang dikelola.",
   },
   {
     id: 4,
-    title: "Marketing",
+    title: "Backend Engineer",
     company: "PT. ABC",
     location: "Jakarta Utara",
     date: "2 hari yang lalu",
     categories: ["Full Time", "Part Time"],
     status: ["Verify"],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates voluptatum. Quisquam, quidem voluptate.",
+      "Mengembangkan dan memelihara server, aplikasi, dan database. Menulis kode yang efisien, terdokumentasi, dan mudah dipelihara. Berkolaborasi dengan tim frontend untuk integrasi sistem dan peningkatan kinerja aplikasi. Menangani bug dan isu teknis untuk memastikan stabilitas sistem.",
   },
   {
     id: 5,
-    title: "Marketing",
+    title: "Staff GA",
     company: "PT. ABC",
     location: "Jakarta Utara",
     date: "2 hari yang lalu",
     categories: ["Full Time", "Part Time"],
     status: ["Verify", "Certified"],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates voluptatum. Quisquam, quidem voluptate.",
+      "Mengurus administrasi dan operasional kantor, termasuk pemeliharaan fasilitas dan pengelolaan inventaris. Mengatur jadwal rapat, perjalanan bisnis, dan dokumentasi perusahaan. Berperan dalam logistik dan dukungan kegiatan kantor, serta memastikan kelancaran operasional sehari-hari.",
   },
   {
     id: 6,
     title: "Marketing",
     company: "PT. ABC",
+    location: "Jakarta",
+    date: "2 hari yang lalu",
+    categories: ["Full Time", "Part Time"],
+    status: ["Verify", "Certified"],
+    description:
+      " Tanggung jawab utama meliputi pengembangan strategi pemasaran yang inovatif, analisis tren pasar, dan perilaku konsumen. Berperan penting dalam mengelola kampanye pemasaran dan kerjasama lintas departemen untuk mencapai target penjualan. Memantau efektivitas kampanye dan mengadaptasi pendekatan berdasarkan umpan balik pasar.",
+  },
+  {
+    id: 7,
+    title: "Sales Staff",
+    company: "PT. Surya Abadi",
+    location: "Jakarta",
+    date: "10 hari yang lalu",
+    categories: ["Full Time", "Part Time"],
+    status: ["Verify", "Certified"],
+    description:
+      "Fokus pada pencapaian target penjualan melalui pemeliharaan hubungan pelanggan yang baik dan identifikasi pelanggan baru. Presentasi dan promosi produk atau layanan, serta memberikan umpan balik kepada tim produk untuk peningkatan. Keterampilan negosiasi dan komunikasi yang baik adalah kunci.",
+  },
+  {
+    id: 8,
+    title: "Data Admin",
+    company: "PT. ABC",
+    location: "Jakarta",
+    date: "2 hari yang lalu",
+    categories: ["Full Time", "Part Time"],
+    status: ["Verify"],
+    description:
+      "Bertanggung jawab mengelola dan memastikan integritas data perusahaan. Melibatkan penginputan data, pembaruan, dan analisis data untuk mendukung pengambilan keputusan. Koordinasi antar departemen untuk kebutuhan data, serta memastikan keamanan dan privasi data yang dikelola.",
+  },
+  {
+    id: 9,
+    title: "Backend Engineer",
+    company: "PT. ABC",
+    location: "Jakarta Utara",
+    date: "2 hari yang lalu",
+    categories: ["Full Time", "Part Time"],
+    status: ["Verify"],
+    description:
+      "Mengembangkan dan memelihara server, aplikasi, dan database. Menulis kode yang efisien, terdokumentasi, dan mudah dipelihara. Berkolaborasi dengan tim frontend untuk integrasi sistem dan peningkatan kinerja aplikasi. Menangani bug dan isu teknis untuk memastikan stabilitas sistem.",
+  },
+  {
+    id: 10,
+    title: "Staff GA",
+    company: "PT. ABC",
     location: "Jakarta Utara",
     date: "2 hari yang lalu",
     categories: ["Full Time", "Part Time"],
     status: ["Verify", "Certified"],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates voluptatum. Quisquam, quidem voluptate.",
+      "Mengurus administrasi dan operasional kantor, termasuk pemeliharaan fasilitas dan pengelolaan inventaris. Mengatur jadwal rapat, perjalanan bisnis, dan dokumentasi perusahaan. Berperan dalam logistik dan dukungan kegiatan kantor, serta memastikan kelancaran operasional sehari-hari.",
   },
 ];
 
@@ -127,11 +171,10 @@ export default function PurnaLokerPage() {
       </section>
       <section className="relative">
         <div className="container mx-auto flex flex-col px-10 pb-10">
-          <div className="flex gap-10">
+          <div className="flex gap-5">
             <div className="w-[50%]">
               <p className="text-2xl" style={{ color: "#FF6700" }}>
-                Hasil Pencarian{" "}
-                <span className="font-semibold">Marketing</span>
+                Hasil Pencarian <span className="font-semibold">Marketing</span>
               </p>
               <div className="flex items-center justify-between mt-2">
                 <p>
@@ -145,7 +188,7 @@ export default function PurnaLokerPage() {
                     key={index}
                     onClick={() => setSelect(item)}
                     className={`border-[1px] cursor-pointer transition-all px-5 rounded-lg hover:border-2 hover:border-[#FF6700] border-gray-400 py-5 ${
-                      select === item && "border-[#FF6700]"
+                      select === item && "!border-[#FF6700]"
                     }`}
                   >
                     <div className="flex items-center justify-between">
@@ -235,7 +278,7 @@ export default function PurnaLokerPage() {
             </div>
             <div className="w-[50%] sticky top-24 p-3">
               {select && (
-                <div className="w-full sticky top-24 p-3">
+                <div className="w-full sticky top-28 p-3">
                   <div className="border-[1px] rounded-xl border-gray-400 p-5 min-h-[300px]">
                     <div className="w-full items-end flex justify-end">
                       <IoIosClose
@@ -260,25 +303,24 @@ export default function PurnaLokerPage() {
                         </p>
                       </div>
                     </div>
-                    <button onClick={() => {
-                      toast.success('Berhasil melamar pekerjaan')
-                    }} className="bg-[#FF6700] text-white px-5 py-2 rounded-lg mt-5 w-full">
+                    <button
+                      onClick={() => {
+                        toast.success("Berhasil melamar pekerjaan");
+                      }}
+                      className="bg-[#FF6700] text-white px-5 py-2 rounded-lg mt-5 w-full"
+                    >
                       Apply
                     </button>
                     <div className="mt-5 border-t text-gray-500 border-gray-400 pt-5">
                       <p className="font-semibold text-base">Description:</p>
-                      <p className="mt-2">Kualifikasi:</p>
-                      <ul className="list-disc list-inside">
-                        <li>Usia maks. 30 tahun</li>
-                        <li>
-                          Minimum Sarjana / S1 Akuntansi / Keuangan IPK min.
-                          3,00
-                        </li>
-                        <li>
-                          Fresh Graduate atau min. 2 tahun pengalaman di bidang
-                          yang sama
-                        </li>
-                      </ul>
+                      <p>
+                        Usia minimal 50 tahun, ideal untuk pensiunan. Latar
+                        belakang di Akuntansi/Keuangan, dengan atau tanpa gelar
+                        Sarjana. Pengalaman bertahun-tahun di bidang keuangan
+                        atau akuntansi. Kemampuan untuk beradaptasi dengan
+                        teknologi dan tren keuangan terkini. Keahlian komunikasi
+                        dan manajerial yang matang.
+                      </p>
                     </div>
                   </div>
                 </div>

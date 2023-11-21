@@ -1,15 +1,8 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
 
 import Navbar from "@/components/Navbar";
-
-const roboto = Roboto({
-  subsets: ["latin"],
-  variable: "--font-poppins",
-  weight: ["100", "300", "400", "500", "700", "900"],
-});
 
 export const metadata: Metadata = {
   title: "Karir Kedua",
@@ -24,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body>
         <Toaster />
         <Navbar />
         {children}

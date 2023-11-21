@@ -41,13 +41,6 @@ const itemAskIPB = [
     answer:
       "Ya, Institut Purna Bakti membuka program khusus untuk lansia yang ingin berkarir di bidang tertentu. Lansia dapat menghubungi Institut Purna Bakti untuk informasi lebih lanjut.",
   },
-  {
-    id: 7,
-    question:
-      "Apakah Institut Purna Bakti membuka program khusus untuk lansia yang ingin berkarir di bidang tertentu?",
-    answer:
-      "Ya, Institut Purna Bakti membuka program khusus untuk lansia yang ingin berkarir di bidang tertentu. Lansia dapat menghubungi Institut Purna Bakti untuk informasi lebih lanjut.",
-  },
 ];
 
 const SectionAskIPB = () => {
