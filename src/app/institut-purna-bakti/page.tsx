@@ -111,12 +111,12 @@ export default function InstitutPurnaBaktiPage() {
                 <div className="flex flex-row gap-20 justify-end items-center">
                   <div className="py-10">
                     <p className="text-2xl max-w-[200px] text-center font-semibold">
-                      Akses ke “Certified Only” Lowongan Kerja
+                      Akses ke &quot;Certified Only&quot; Lowongan Kerja
                     </p>
                   </div>
                   <div className="py-10">
                     <p className="text-2xl font-semibold max-w-[200px] ">
-                      Tersertifikasi sebagai “Digital Ready Talent”
+                      Tersertifikasi sebagai &quot;Digital Ready Talent&quot;
                     </p>
                   </div>
                 </div>
@@ -192,8 +192,8 @@ export default function InstitutPurnaBaktiPage() {
                 </div>
               </div>
               <p className="mt-2 text-gray-500">
-                "Wow, job portal ini bikin pensiun jadi anti-mainstream! Dari
-                ngopi doang, sekarang saya jadi barista senior!"
+                &quot;Wow, job portal ini bikin pensiun jadi anti-mainstream!
+                Dari ngopi doang, sekarang saya jadi barista senior!&quot;
               </p>
             </div>
             <div className="w-[500px] rounded-3xl bg-white h-[300px] p-8">
@@ -213,9 +213,9 @@ export default function InstitutPurnaBaktiPage() {
                 </div>
               </div>
               <p className="mt-2 text-gray-500">
-                "Baru tahu ternyata pensiunan bisa jadi influencer di dunia
+                &quot;Baru tahu ternyata pensiunan bisa jadi influencer di dunia
                 kerja. Job portal ini bener-bener bikin saya merasa kayak
-                seleb!"
+                seleb!&quot;
               </p>
             </div>
           </div>
