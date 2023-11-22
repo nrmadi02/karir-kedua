@@ -1,9 +1,25 @@
+'use client'
+
 import Footer from "@/components/Footer";
 import SectionAskIPB from "@/components/Sections/SectionAskIPB";
 import Image from "next/image";
-import React from "react";
+import { ChangeEvent, useState } from "react";
+import toast from "react-hot-toast";
 
 export default function InstitutPurnaBaktiPage() {
+  const [stateContact, setStateContact] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    address: "",
+  });
+
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setStateContact((prev) => ({ ...prev, [name]: value }));
+  };
   return (
     <div>
       <section className="bg-[#FF9248] ">
@@ -222,7 +238,14 @@ export default function InstitutPurnaBaktiPage() {
         </div>
       </section>
       <section className="pt-[60px] pb-[60px]">
-        <div className="container mx-auto flex flex-col px-10 items-center justify-center">
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            toast.success("Berhasil mendaftar, Periksa email anda");
+            console.log(stateContact);
+          }}
+          className="container mx-auto flex flex-col px-10 items-center justify-center"
+        >
           <h1 className="text-4xl font-bold text- max-w-xl text-center leading-[50px]">
             Form Pendaftaran
           </h1>
@@ -230,25 +253,45 @@ export default function InstitutPurnaBaktiPage() {
             <p>Informasi Data Diri</p>
             <div className="flex flex-col mt-2">
               <label className="font-bold">Nama</label>
-              <input className="rounded-md border transition-all focus:border-none border-gray-300 outline-none px-3 py-2 focus:ring-[1px] focus:ring-[#FF9248]" />
+              <input
+                name="name"
+                required
+                onChange={(e) => handleChange(e)}
+                className="rounded-md border transition-all focus:border-none border-gray-300 outline-none px-3 py-2 focus:ring-[1px] focus:ring-[#FF9248]"
+              />
             </div>
             <div className="flex flex-col mt-2">
               <label className="font-bold">Email</label>
-              <input className="rounded-md border transition-all focus:border-none border-gray-300 outline-none px-3 py-2 focus:ring-[1px] focus:ring-[#FF9248]" />
+              <input
+                name="email"
+                type="email"
+                required
+                onChange={(e) => handleChange(e)}
+                className="rounded-md border transition-all focus:border-none border-gray-300 outline-none px-3 py-2 focus:ring-[1px] focus:ring-[#FF9248]"
+              />
             </div>
             <div className="flex flex-col mt-2">
               <label className="font-bold">No. HP</label>
-              <input className="rounded-md border transition-all focus:border-none border-gray-300 outline-none px-3 py-2 focus:ring-[1px] focus:ring-[#FF9248]" />
+              <input
+                name="phone"
+                inputMode="numeric"
+                onChange={(e) => handleChange(e)}
+                className="rounded-md border transition-all focus:border-none border-gray-300 outline-none px-3 py-2 focus:ring-[1px] focus:ring-[#FF9248]"
+              />
             </div>
             <div className="flex flex-col mt-2">
               <label className="font-bold">Alamat</label>
-              <textarea className="rounded-md border transition-all focus:border-none border-gray-300 outline-none px-3 py-2 focus:ring-[1px] focus:ring-[#FF9248]" />
+              <textarea
+                name="address"
+                onChange={(e) => handleChange(e)}
+                className="rounded-md border transition-all focus:border-none border-gray-300 outline-none px-3 py-2 focus:ring-[1px] focus:ring-[#FF9248]"
+              />
             </div>
             <button className="bg-[#FF9248] mt-5 rounded-lg text-white font-semibold text-lg py-3 w-[200px]">
               <p>Daftar</p>
             </button>
           </div>
-        </div>
+        </form>
       </section>
       <section className="pt-[60px] pb-[60px]">
         <div className="container mx-auto flex flex-col px-10 items-center justify-center">
